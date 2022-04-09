@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "private": true,
+  "repository": "https://github.com/rdeak/monorepo-template.git",
+  "author": "Robert Deak <robert.deak@gmail.com>",
+  "license": "MIT",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "watch": "yarn workspaces run watch"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "@monorepo/app",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@monorepo/core": "1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "4.6.3"
+  }
+}

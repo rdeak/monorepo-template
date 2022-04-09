@@ -1,0 +1,4 @@
+/.idea/
+dist/
+tsconfig.tsbuildinfo
+node_modules/
