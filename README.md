@@ -1,6 +1,6 @@
 # Monorepo template
 
-This is a sample monorepo project. It uses yarn workspaces and typescript.
+This is a sample monorepo project. It uses yarn workspaces, lerna and typescript.
 
 # How to add a new package?
 

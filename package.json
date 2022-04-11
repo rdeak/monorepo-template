@@ -8,8 +8,11 @@
     "packages/*"
   ],
   "scripts": {
-    "compile": "tsc -b",
-    "watch": "yarn workspaces run watch"
+    "prebuild": "lerna exec rimraf dist *.tsbuildinfo",
+    "build": "tsc -b",
+    "watch": "lerna run watch --stream",
+    "lint": "lerna run lint --stream",
+    "lint:fix": "lerna run lint:fix --stream"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.18.0",
@@ -17,6 +20,7 @@
     "eslint": "8.13.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
+    "lerna": "4.0.0",
     "prettier": "2.6.2",
     "rimraf": "3.0.2"
   }
