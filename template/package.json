@@ -5,7 +5,9 @@
   "types": "dist/index",
   "license": "MIT",
   "scripts": {
-    "watch": "tsc -b --watch"
+    "watch": "tsc -b --watch",
+    "lint": "eslint src --ext js,ts",
+    "lint:fix": "yarn lint --fix"
   },
   "devDependencies": {
     "typescript": "4.6.3"

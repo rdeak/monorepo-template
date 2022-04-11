@@ -1,3 +1,3 @@
-import {say} from '@monorepo/core';
+import { say } from "@monorepo/core";
 
 say();

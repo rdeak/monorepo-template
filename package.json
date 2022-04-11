@@ -4,8 +4,20 @@
   "repository": "https://github.com/rdeak/monorepo-template.git",
   "author": "Robert Deak <robert.deak@gmail.com>",
   "license": "MIT",
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "compile": "tsc -b",
     "watch": "yarn workspaces run watch"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.18.0",
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2",
+    "rimraf": "3.0.2"
   }
 }
