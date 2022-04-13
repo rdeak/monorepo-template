@@ -4,8 +4,9 @@
   "source": "src/index.html",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve --open",
+    "dev": "parcel watch src/*.html",
     "build": "parcel build src/*.html",
+    "start": "parcel serve --open",
     "lint": "eslint src --ext js,ts,json,jsx,tsx  ",
     "lint:fix": "yarn lint --fix",
     "test:compile": "tsc --noEmit"
