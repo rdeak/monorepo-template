@@ -1,0 +1,27 @@
+{
+  "name": "@monorepo/ui",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel serve --open",
+    "build": "parcel build src/*.html",
+    "lint": "eslint src --ext js,ts,json,jsx,tsx  ",
+    "lint:fix": "yarn lint --fix",
+    "test:compile": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "@monorepo/ui-components": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.0",
+    "@types/react-dom": "18.0.0",
+    "typescript": "4.6.3",
+    "parcel": "2.4.1"
+  },
+  "alias": {
+    "src": "./src"
+  }
+}

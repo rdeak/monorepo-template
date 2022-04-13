@@ -1,6 +1,12 @@
 # Monorepo template
 
-This is a sample monorepo project. It uses yarn workspaces, lerna and typescript.
+This is a sample monorepo project. It uses yarn workspaces, lerna, parcel and typescript.
+
+# Package types
+api - REST api
+core - backend library
+ui - react application
+ui-components - react component library
 
 # How to add a new package?
 
@@ -10,7 +16,7 @@ This is a sample monorepo project. It uses yarn workspaces, lerna and typescript
 
 # How to add a package dependency?
 
-Open a package tsconfig and add or update `references` section
+Just add as regular dependency with version number
 
 # How to compile packages? / How to develop?
 

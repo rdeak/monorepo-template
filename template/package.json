@@ -1,13 +1,16 @@
 {
   "name": "@monorepo/<name>",
   "version": "1.0.0",
-  "main": "dist/index",
-  "types": "dist/index",
   "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
   "scripts": {
-    "watch": "tsc -b --watch",
-    "lint": "eslint src --ext js,ts",
-    "lint:fix": "yarn lint --fix"
+    "dev": "yarn build --watch --preserveWatchOutput",
+    "build": "tsc -b",
+    "lint": "eslint src --ext js,ts,json,jsx,tsx",
+    "lint:fix": "yarn lint --fix",
+    "test:compile": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "4.6.3"
